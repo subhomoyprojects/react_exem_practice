@@ -1,24 +1,38 @@
 import { Box, Button, Container, Typography } from "@mui/material";
-import { useState } from "react";
+import { useReducer } from "react";
 
-export default function Home() {
-  const [count, setCount] = useState(1);
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "INCREMENT": {
+      return (state = state + 1);
+    }
+    case "DECREMENT": {
+      if (state > 0) {
+        return (state = state - 1);
+      }
+    }
+    default: {
+      return state;
+    }
+  }
+};
+
+export default function About() {
+  const [state, dispatch] = useReducer(reducer, 1);
   const increment = () => {
-    setCount(count + 1);
+    dispatch({ type: "INCREMENT" });
   };
   const decrement = () => {
-    if (count > 0) {
-      setCount(count - 1);
-    }
+    dispatch({ type: "DECREMENT" });
   };
   return (
     <>
       <main>
         <Container>
           <Box>
-            <Typography variant="h3">Home</Typography>
+            <Typography variant="h3">About</Typography>
             <Typography variant="body2" marginY={2}>
-              Count {count}
+              Count {state}
             </Typography>
             <Box className="btn-holder">
               <Button variant="contained" color="success" type="button" onClick={increment}>

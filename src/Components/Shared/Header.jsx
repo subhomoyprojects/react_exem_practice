@@ -3,7 +3,7 @@ import { AppBar, Badge, Box, Button, Container, IconButton, Menu, MenuItem, Tool
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
-const pages = ["Home", "Product", "Cart"];
+const pages = ["Home", "About", "Blog", "Product", "Cart"];
 
 export default function Header() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container>
         <Toolbar disableGutters>
           <Adb sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
@@ -91,9 +91,9 @@ export default function Header() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Button key={page} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
-                {page}
-              </Button>
+              <Link key={page} onClick={handleCloseNavMenu} to={`/${page.toLowerCase()}`} style={{ color: "#fff", marginInline: "10px" }}>
+                <Typography textAlign="center">{page}</Typography>
+              </Link>
             ))}
           </Box>
           <Box sx={{ display: { md: "flex" } }}>

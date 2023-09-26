@@ -1,7 +1,9 @@
+import "./shared.css";
+
 export default function Footer() {
   return (
     <>
-      <p>&copy; 2023 Testing React</p>
+      <p className="copy-right">&copy; 2023 Testing React</p>
     </>
   );
 }
