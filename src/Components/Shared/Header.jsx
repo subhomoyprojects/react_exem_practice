@@ -1,9 +1,9 @@
 import { Adb, Mail, Notifications } from "@mui/icons-material";
-import { AppBar, Badge, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Typography } from "@mui/material";
+import { AppBar, Badge, Box, Container, IconButton, Menu, MenuItem, Toolbar, Typography } from "@mui/material";
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
-const pages = ["Home", "About", "Blog", "Product", "Cart"];
+const pages = ["Home", "About", "Blog", "Product", "Cart", "Register", "Login"];
 
 export default function Header() {
   const [anchorElNav, setAnchorElNav] = useState(null);

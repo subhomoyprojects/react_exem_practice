@@ -8,13 +8,19 @@ export const status = Object.freeze({
 });
 
 export const authRegister = createAsyncThunk("/user/signup", async (formData) => {
-  let res = instance.post(`/user/signup`, formData);
+  let res = await instance.post(`/user/signup`, formData);
   let resData = res?.data;
   return resData;
 });
 
-const authSlice = createSlice({
-  name: "authSlice",
+export const authLogin = createAsyncThunk("/user/signin", async (formData) => {
+  const res = await instance.post(`/user/signin`, formData);
+  let resData = res?.data;
+  return resData;
+});
+
+const AuthSlice = createSlice({
+  name: "AuthSlice",
   initialState: {
     status: status.success,
   },
@@ -33,4 +39,4 @@ const authSlice = createSlice({
   },
 });
 
-export default authSlice.reducer;
+export default AuthSlice.reducer;
