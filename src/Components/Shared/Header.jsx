@@ -68,6 +68,9 @@ export default function Header() {
                   </Link>
                 </MenuItem>
               ))}
+              <MenuItem>
+                <Link to="/blog/1">Blog Details</Link>
+              </MenuItem>
             </Menu>
           </Box>
           <Adb sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
@@ -95,6 +98,7 @@ export default function Header() {
                 <Typography textAlign="center">{page}</Typography>
               </Link>
             ))}
+            <Link to="/blog/1">Blog Details</Link>
           </Box>
           <Box sx={{ display: { md: "flex" } }}>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
