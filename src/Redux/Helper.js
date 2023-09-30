@@ -1,7 +1,7 @@
 import axios from "axios";
 
-let instance = axios.create({
-  baseURL: "https://wtsacademy.dedicateddevelopers.us/api",
+let Instance = axios.create({
+  baseURL: "https://restapinodejs.onrender.com/api",
 });
 
-export default instance;
+export default Instance;

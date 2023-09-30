@@ -1,0 +1,39 @@
+blog Api
+https://restapinodejs.onrender.com/api/allBlog
+blog details
+https://restapinodejs.onrender.com/api/blogdetails/649be0ab7c7468b9a9464fe4
+blog image
+https://restapinodejs.onrender.com/api/blog/image/649be0ab7c7468b9a9464fe4
+
+All Category
+https://restapinodejs.onrender.com/api/showallcategory
+Category with post
+https://restapinodejs.onrender.com/api/category/post/64944158bae2325ed6ce79c2
+Recent post
+https://restapinodejs.onrender.com/api/letest-post
+
+without redux die ai api ta fetch korbe
+
+Register Api
+https://restapinodejs.onrender.com/api/register
+(Body Filed: name, email, mobile, password, post request )
+login Api
+https://restapinodejs.onrender.com/api/login 
+(Body Filed: email and password, post request)
+
+ata with redux a korbe
+are useState die 4 ta example banabe
+
+
+akta button thakbe seta ke click korar por akta prompt open hobe then prompt a kichu data debe die jokon ok button click korbe sei ta amr page a show hobe
+ai kaj ta usestate usereducer du ta tei korbe
+
+
+akta input field thakbe sekane password r strength check hobe
+with usestate 
+weak strong medium arokom check hobe
+
+
+
+
+
