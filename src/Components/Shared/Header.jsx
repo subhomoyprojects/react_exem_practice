@@ -3,7 +3,7 @@ import { AppBar, Badge, Box, Container, IconButton, Menu, MenuItem, Toolbar, Typ
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
-const pages = ["Home", "About", "Blog", "Product", "Cart", "Register", "Login"];
+const pages = ["Home"];
 
 export default function Header() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -98,9 +98,6 @@ export default function Header() {
                 <Typography textAlign="center">{page}</Typography>
               </Link>
             ))}
-            <Link to="/blog/1" style={{ color: "#fff", marginInline: "10px" }}>
-              Blog Details
-            </Link>
           </Box>
           <Box sx={{ display: { md: "flex" } }}>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">

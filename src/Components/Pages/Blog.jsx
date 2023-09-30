@@ -1,7 +1,11 @@
+import { Container, Typography } from "@mui/material";
+
 export default function Blog() {
   return (
-    <div>
-      <h1>Blog </h1>
-    </div>
+    <main>
+      <Container>
+        <Typography variant="h4">Blog</Typography>
+      </Container>
+    </main>
   );
 }
