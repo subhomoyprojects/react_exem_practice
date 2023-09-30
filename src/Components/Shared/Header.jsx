@@ -98,7 +98,9 @@ export default function Header() {
                 <Typography textAlign="center">{page}</Typography>
               </Link>
             ))}
-            <Link to="/blog/1">Blog Details</Link>
+            <Link to="/blog/1" style={{ color: "#fff", marginInline: "10px" }}>
+              Blog Details
+            </Link>
           </Box>
           <Box sx={{ display: { md: "flex" } }}>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
