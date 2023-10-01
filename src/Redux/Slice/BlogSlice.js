@@ -7,29 +7,31 @@ export const STATUSES = Object.freeze({
   LOADING: "loading",
 });
 
-export const registerThunk = createAsyncThunk("/register", async (payload) => {
-  const res = await Instance.post(`/register`, payload);
+export const blogThunk = createAsyncThunk("/allBlog", async () => {
+  const res = await Instance.get(`/allBlog`);
   let resData = res?.data;
   return resData;
 });
 
-const AuthSlice = createSlice({
-  name: "AuthSlice",
+const BlogSlice = createSlice({
+  name: "BlogSlice",
   initialState: {
+    data: [{}],
     status: STATUSES.SUCCESS,
   },
   extraReducers: (builder) => {
     builder
-      .addCase(registerThunk.pending, (state) => {
+      .addCase(blogThunk.pending, (state) => {
         state.status = STATUSES.LOADING;
       })
-      .addCase(registerThunk.fulfilled, (state) => {
+      .addCase(blogThunk.fulfilled, (state, { payload }) => {
         state.status = STATUSES.SUCCESS;
+        state.data = payload.data;
       })
-      .addCase(registerThunk.rejected, (state) => {
+      .addCase(blogThunk.rejected, (state) => {
         state.status = STATUSES.ERROR;
       });
   },
 });
 
-export default AuthSlice.reducer;
+export default BlogSlice.reducer;

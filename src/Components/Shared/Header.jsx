@@ -3,7 +3,7 @@ import { AppBar, Badge, Box, Container, IconButton, Menu, MenuItem, Toolbar, Typ
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
-const pages = ["Blog"];
+const pages = ["Blog", "Login", "Register", "Blogsearch"];
 
 export default function Header() {
   const [anchorElNav, setAnchorElNav] = useState(null);
