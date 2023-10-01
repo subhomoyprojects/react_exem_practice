@@ -12,6 +12,11 @@ export const blogThunk = createAsyncThunk("/allBlog", async () => {
   let resData = res?.data;
   return resData;
 });
+export const blogCategoryThunk = createAsyncThunk("/showallcategory", async () => {
+  const res = await Instance.get(`/showallcategory`);
+  let resData = res?.data;
+  return resData;
+});
 
 const BlogSlice = createSlice({
   name: "BlogSlice",

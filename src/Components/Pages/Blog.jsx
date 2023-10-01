@@ -5,14 +5,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { blogThunk } from "../../Redux/Slice/BlogSlice";
 
 export default function Blog() {
-  const data = useSelector((state) => state.Blog);
+  const { data } = useSelector((state) => state.Blog);
   console.log(data);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
-    // Instance.get(`/allBlog`).then((res) => setApiData(res.data.data));
-    // Instance.get(`/showallcategory`).then((res) => setCategory(res.data.data));
     dispatch(blogThunk());
   }, [dispatch]);
   return (
@@ -24,8 +22,8 @@ export default function Blog() {
         <Grid container spacing={3}>
           <Grid item sm={9}>
             <Grid container spacing={3}>
-              {Array.isArray(data.data) &&
-                data.data.map((item) => {
+              {Array.isArray(data) &&
+                data.map((item) => {
                   return (
                     <Grid key={item._id} item sm={6}>
                       <BlogItem id={item._id} title={item.title} content={item.postText} image={item.photo.data} imageType={item.contentType} date={item.createdAt} />

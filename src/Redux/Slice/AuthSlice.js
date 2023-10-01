@@ -13,6 +13,12 @@ export const registerThunk = createAsyncThunk("/register", async (payload) => {
   return resData;
 });
 
+export const loginThunk = createAsyncThunk("/login", async (payload) => {
+  const res = await Instance.post(`/login`, payload);
+  let resData = res?.data;
+  return resData;
+});
+
 const AuthSlice = createSlice({
   name: "AuthSlice",
   initialState: {
