@@ -1,13 +1,13 @@
 import { Autocomplete, Chip, Container, Grid, TextField, Typography } from "@mui/material";
 import BlogItem from "./SubComponent/BlogItem";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { blogCategoryThunk, blogThunk } from "../../Redux/Slice/BlogSlice";
 
 export default function Blog() {
   const { items, categories } = useSelector((state) => state.Blog);
-  console.log(items);
-  console.log(categories);
+  // console.log(items);
+  // console.log(categories);
 
   const dispatch = useDispatch();
 
@@ -15,6 +15,8 @@ export default function Blog() {
     dispatch(blogThunk());
     dispatch(blogCategoryThunk());
   }, [dispatch]);
+  const [categoryValue, setCategoryValue] = useState([]);
+  console.log(categoryValue);
   return (
     <main>
       <Container>
@@ -39,6 +41,8 @@ export default function Blog() {
               Category
             </Typography>
             <Autocomplete
+              value={categoryValue}
+              onChange={(event, newValue) => setCategoryValue(newValue)}
               multiple
               options={categories.map((option) => option.category)}
               renderTags={(value, getTagProps) => value.map((option, index) => <Chip key={option._id} variant="outlined" label={option} {...getTagProps({ index })} />)}
