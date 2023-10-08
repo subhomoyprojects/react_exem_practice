@@ -34,6 +34,350 @@ with usestate
 weak strong medium arokom check hobe
 
 
+1. What is React.js primarily used for?
+a. Server-side scripting
+b. Building user interfaces
+c. Database management
+d. Mobile app development
+Answer: b. Building user interfaces 
+
+
+2. Which method is used to update state an reRender?
+a. setState()
+b. updateState()
+c. modifyState()
+d. changeState()
+Answer: a. setState()
+
+3. What does JSX stand for in React?
+a. JavaScript XML
+b. JavaScript Extensio
+c. JavaScript Exclamation
+d. JavaScript XQuery
+Answer: a. JavaScript XML
+
+
+4. Which  lifecycle method is called after a component  rendered  the DOM?
+a. componentDidMount()
+b. componentWillMount()
+c. componentDidUpdate()
+d. componentWillUpdate()
+Answer: a. componentDidMount()
+
+5. What is the purpose of PropTypes in React?
+a. To declare the types of variables used in a component
+b. To define the shape of the component's state
+c. To specify the data types of API requests
+d. To create custom HTML elements
+Answer: a. To declare the types of variables used in a component
+
+
+6. what is the virtual DOM?
+a. A tool for debugging React applications
+b. A JavaScript library for routing in React apps
+c. A lightweight alternative to the actual DOM
+d. A concept used to improve rendering performance
+Answer: d. A concept used to improve rendering performance
+
+
+7. HOW to pass data parent component to a child component?
+a. Using props
+b. Using state
+c. Using context
+d. Using local component variables
+Answer: b.  Using props
+
+
+8. what does the render() method return?
+a. JSX elements
+b. A string
+c. An object
+d. An array
+Answer: a. JSX elements
+
+
+9. What is the purpose of React Router?
+a. To manage state in React applications
+b. To handle HTTP requests in React applications
+c. To enable client-side routing in React applications
+d. To create forms and input validation in React applications
+Answer: c. To enable client-side routing in React applications
+
+10. Which tool can be used for bundling and building React applications?
+a. Webpack
+b. Babel
+c. Redux
+d. ESLint
+Answer: a. Webpack
+
+
+11. What is the purpose of the constructor method ?
+a. Initializing the component's state
+b. Defining the component's structure
+c. Rendering JSX elements
+d. Managing event handlers
+Answer: a. Initializing the component's state
+
+
+12. What is a controlled component in React?
+a. A component that is managed by Redux
+b. A component that uses the useState hook
+c. A component that relies on uncontrolled inputs
+d. A component whose value is controlled by React state
+Answer: d. A component whose value is controlled by React state
+
+13. What’S  the main purpose of using map?
+a. Creates a new array by applying a function to each element
+b. Removes elements from an array
+c. Sorts the array in descending order
+d. Combines two arrays into one
+Answer: a. Creates a new array by applying a function to each element
+
+14. what is the purpose of key prop ?
+a. It specifies the background color of list items
+b. It ensures that each list item has a unique identifier
+c. It defines the font size of list items
+d. It determines the order of list items
+Answer: b. It ensures that each list item has a unique identifier
+
+15. Which  hook is used handling side effects ?
+a. useEffect()
+b. useState()
+c. useContext()
+d. useReducer()
+Answer: a. useEffect()
+
+16. What is the purpose of the Redux lib?
+a. To manage component rendering
+b. To handle HTTP requests
+c. To manage global application state
+d. To create reusable UI components
+Answer: c. To manage global application state
+
+17. Which  lifecycle methods is deprecated in React 16 and later versions?
+a. componentWillMount()
+b. componentDidUpdate()
+c. componentWillReceiveProps()
+d. componentDidMount()
+Answer: a. componentWillMount()
+
+18. What is the meaning of shouldComponentUpdate()  in React?
+a. It determines if a component should re-render when its state or props change
+b. It initializes the component's state
+c. It handles events in a functional component
+d. It triggers a component update immediately
+Answer: a. It determines if a component should re-render when its state or props change
+
+19.  what is the purpose of the children prop?
+a. It stores data from an API request
+b. It represents the child components of a parent component
+c. It defines the styling for child elements
+d. It specifies the route configuration for navigation
+Answer: b. It represents the child components of a parent component
+
+
+20. Which method is used to handle errors that occur during rendering?
+a. componentDidCatch()
+b. componentDidUpdate()
+c. componentWillUnmount()
+d. componentWillReceiveProps()
+Answer: a. componentDidCatch()
+
+21. What is Redux Toolkit primarily designed to do?
+a. Handle asynchronous actions in Redux
+b. Simplify and streamline Redux development
+c. Replace Redux with a different state management library
+d. Optimize the performance of Redux applications
+Answer: b. Simplify and streamline Redux development
+	
+	
+22. Which Redux Toolkit function is used to create a Redux store ?
+a. configureStore()
+b. createStore()
+c. setupStore()
+d. initializeStore()
+Answer: a. configureStore()
+
+23. What is the purpose of  createSlice function ?
+a. It defines a new Redux action
+b. It creates a new Redux store
+c. It generates reducer and action creators for a slice of the state
+d. It initializes the state of a Redux store
+Answer: c. It generates reducer and action creators for a slice of the state
+
+24. How does Redux Toolkit simplify  process of defining Redux actions?
+a. By automatically generating action types and action creators
+b. By eliminating the need for actions in Redux
+c. By providing a new syntax for defining actions
+d. By requiring developers to write more code for each action
+Answer: a. By automatically generating action types and action creators
+
+25. How do you dispatch an action created by a slice?
+a. dispatchSliceAction(sliceAction)
+b. dispatch({ type: sliceAction })
+c. dispatch(sliceAction())
+d. dispatch(sliceAction)
+Answer: d. dispatch(sliceAction)
+
+26. What is the purpose of the createAsyncThunk function?
+a. It creates asynchronous reducers for Redux
+b. It generates action creators for making asynchronous API calls
+c. It defines the initial state of a Redux store
+d. It replaces Redux reducers entirely
+Answer: b. It generates action creators for making asynchronous API calls
+
+27. Which of the following is NOT a built-in middleware included in ReduxToolkit?
+a. Redux Thunk middleware
+b. Redux Logger middleware
+c. Redux Saga middleware
+d. Redux Promise middleware
+Answer: c. Redux Saga middleware
+		
+28.  how do you create a reducer slice?
+a. Use the createReducerSlice function
+b. Use the createSlice function
+c. Use the createStore function
+d. Use the configureStore function
+Answer: b. Use the createSlice function
+
+
+29.  which function is used to combine reducer slices in redux store?
+a. createReducer
+b. configureStore
+c. combineReducers
+d. createSliceStore
+Answer: b. configureStore
+
+30.  how do you create a reducer slice?
+a. Use the createReducerSlice function
+b. Use the createSlice function
+c. Use the createStore function
+d. Use the configureStore function
+Answer: b. Use the createSlice function
+
+
+What is the  purpose of an interceptor in Redux?
+A) To handle routing in a React application
+B) To intercept and modify actions before they reach the reducer
+C) To manage the state of a component
+D) To validate form input data
+Answer: B) To intercept and modify actions before they reach the reducer
+
+In Redux, where is it common to use interceptors?
+A) In the component's render method
+B) In the Redux store's dispatch method
+C) In the reducer functions
+D) In the action creators
+Answer: B) In the Redux store's dispatch method
+
+Which middleware is commonly used for intercepting actions ?
+A) Redux Thunk
+B) Redux Logger
+C) Redux Saga
+D) Redux Middleware
+Answer: D) Redux Middleware
+
+In Redux, what is the typical flow of an intercepted action ?
+A) Action -> Reducer -> Middleware -> API Request
+B) Action -> API Request -> Middleware -> Reducer
+C) Action -> Reducer -> API Request -> Middleware
+D) Action -> Middleware -> API Request -> Reducer
+Answer: D) Action -> Middleware -> API Request -> Reducer
+TestGorilla
+* 		What does HTML stand for?
+    * A) Hyper Transfer Markup Language
+    * B) Hyper Text Markup Language
+    * C) High-Level Text Markup Language
+    * D) Hyperlink and Text Markup Language
+    * Answer: B) Hyper Text Markup Language
+* 		Which HTML tag is used to define the structure of an HTML document and contains metadata about the document?
+    * A) <head>
+    * B) <meta>
+    * C) <title>
+    * D) <body>
+    * Answer: A) <head>
+* 		Which HTML tag is used to create a hyperlink?
+    * A) <link>
+    * B) <a>
+    * C) <href>
+    * D) <url>
+    * Answer: B) <a>
+* 		What is the correct HTML element for inserting a line break?
+    * A) <br>
+    * B) <lb>
+    * C) <break>
+    * D) <newline>
+    * Answer: A) <br>
+* 		Which HTML tag is used for creating an ordered list?
+    * A) <ul>
+    * B) <li>
+    * C) <ol>
+    * D) <dl>
+    * Answer: C) <ol>
+* 		What is the correct way to comment out multiple lines of HTML code?
+    * A) <!-- This is a comment -->
+    * B) // This is a comment //
+     C) / This is a comment */
+    * D) % This is a comment %
+    * Answer: A) <!-- This is a comment -->
+* 		Which HTML attribute is used to specify an image source?
+    * A) src
+    * B) img-source
+    * C) image-source
+    * D) link
+    * Answer: A) src
+    * 
+
+
+
+
+
+1)[1,2,3,4,5,6]remove the last element of array
+2)define object and print the value
+3)[{name:”Nill”,address:”malda”},{name:”Rupam”,address:”Kolkata”},{name:”raju”,address:”Jalpaiguri}only print  2nd object
+4)”Rahul” reverse the string
+5)”Rahul” split the string
+6)”Rahul”print one by one letter
+7)[1,2,3,4,5,6] print value with index number
+8)define a async function 
+9)what is constructor
+10)add with constructor
+11)what is super keyword
+12)what is inheritance
+13)types of contractor
+14)using loop 1 to 10 but print only 1 to 6
+15)what is arguments how we pass in function
+16)difference between == and ===
+17)Edit in array of object  property without changing original array of object.
+18)Write a function that takes a variable number of arrays as arguments and returns a single array containing all the elements from the input arrays, using the rest parameter.
+19)Create a function that takes an array of objects and sorts them based on a specified property using the sort function
+20)Write a function that finds the maximum value in an array of numbers using the reduce function.
+21)Write a function that takes an array of numbers and returns a new array where each element is doubled.
+22)print your name 1000 time
+23))Create a function that takes any number of arguments and calculates the average using the rest parameter.
+24)how we reduce array in single value
+25)difference between not define and undefine
+26)How do you define a callback function in JavaScript
+27) difference between let var const
+28)Describe how you  use the map(), filter(), and reduce() array methods in JavaScript
+
+
+
+1)1 to 20 print only even numbers
+2)”Hello Mr Hy I am good boy” how vowels in this sentence
+3)JavaScript function in reverses a number.
+4)find the longest word 	Web Development Class
+5)Write a JavaScript program to find the leap years in a given range of years.
+6)There are two arrays with individual values. Write a JavaScript program to compute the sum of each individual index value in the given array.
+7)Write a JavaScript program to find duplicate values in a JavaScript array
+8)Write a JavaScript program to check if the given argument is a string.
+9)Write a JavaScript program to convert an asynchronous function to return a promise.
+10)Write a JavaScript program to create an object from the specified object, where all keys are in lowercase
+11)Write a JavaScript program to find the most frequent item in an array.
+Sample array : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+12)[{name:”Nill”,address:”malda”},{name:”Rupam”,address:”Kolkata”},{name:”raju”,address:”Jalpaiguri}remove   2nd object
+
+
 
 
 

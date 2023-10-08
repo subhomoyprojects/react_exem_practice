@@ -1,11 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import Instance from "../Helper";
-
-export const STATUSES = Object.freeze({
-  SUCCESS: "success",
-  ERROR: "error",
-  LOADING: "loading",
-});
+import Instance, { STATUSES } from "../Helper";
 
 export const blogThunk = createAsyncThunk("/allBlog", async () => {
   const res = await Instance.get(`/allBlog`);
